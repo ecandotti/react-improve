@@ -5,7 +5,6 @@
         "allowSyntheticDefaultImports": true,
         "useUnknownInCatchVariables": false,
         "useDefineForClassFields": true,
-        "esModuleInterop": true,
         "isolatedModules": false,
         "jsx": "react-jsx",
         "types": ["node", "vite/client"],
@@ -17,7 +16,7 @@
         "resolveJsonModule": true,
         "skipLibCheck": true,
         "target": "ESNext",
-        "baseUrl": "."
+        "baseUrl": "./"
     },
     "exclude": ["node_modules"],
     "references": [{ "path": "./tsconfig.node.json" }]

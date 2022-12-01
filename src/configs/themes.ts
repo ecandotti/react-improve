@@ -1,14 +1,14 @@
 const lightMode = {
     colors: {
         white: "#FFFFFF",
-        black: "#000000",
+        black: "#191919",
     },
 }
 
 const darkMode = {
     colors: {
         white: "#FFFFFF",
-        black: "#000000",
+        black: "#191919",
     },
 }
 

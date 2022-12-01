@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom"
 
-import Contact from "../pages/Contact"
+import NotFound from "src/pages/NotFound"
 
 import App from "../App"
 
@@ -10,7 +10,7 @@ export const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/test",
-        element: <Contact />,
+        path: "*",
+        element: <NotFound />,
     },
 ])

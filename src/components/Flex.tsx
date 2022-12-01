@@ -4,7 +4,7 @@ interface Props {
     text: string
 }
 
-const CustomButton: React.FC<Props> = ({ text }): JSX.Element => {
+const Flex: React.FC<Props> = ({ text }): JSX.Element => {
     return <Button>{text}</Button>
 }
 
@@ -17,4 +17,4 @@ const Button = style.button`
     cursor: pointer;
 `
 
-export default CustomButton
+export default Flex
