@@ -14,7 +14,7 @@ export default defineConfig(({ command, mode }) => {
             react(),
             VitePluginFonts({
                 google: {
-                    text: "ViteAwsom",
+                    text: "DPY - Do Pizza Yourself",
                     families: ["Poppins"],
                 },
             }),
