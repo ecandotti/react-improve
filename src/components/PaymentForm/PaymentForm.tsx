@@ -7,9 +7,10 @@ import { Button } from ".."
 
 interface Props {
     onClose: any
+    submitStripe: any
 }
 
-const PaymentForm: React.FC<Props> = ({ onClose }): JSX.Element => {
+const PaymentForm: React.FC<Props> = ({ onClose, submitStripe }): JSX.Element => {
     const stripe = useStripe()
     const elements = useElements()
 
@@ -24,6 +25,9 @@ const PaymentForm: React.FC<Props> = ({ onClose }): JSX.Element => {
             type: "card",
             card: elements.getElement(CardElement) as any,
         })
+
+        onClose()
+        submitStripe()
     }
 
     return (

@@ -122,7 +122,10 @@ const Custom: React.FC = (): JSX.Element => {
                 contentLabel="Payment Process"
             >
                 <Elements stripe={stripePromise}>
-                    <PaymentForm onClose={() => setIsOpen(false)} />
+                    <PaymentForm
+                        onClose={() => setIsOpen(false)}
+                        submitStripe={() => setPizza({ ...pizza, done: true })}
+                    />
                 </Elements>
             </Modal>
         </>

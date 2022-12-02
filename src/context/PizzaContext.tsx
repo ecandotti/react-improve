@@ -19,8 +19,6 @@ export const PizzaContextProvider: React.FC<Props> = ({ children }) => {
         done: false,
     })
 
-    const removeContent = (item: any) => {}
-
     const clearContent = () => {
         setPizza({})
     }
