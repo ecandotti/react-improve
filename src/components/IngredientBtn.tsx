@@ -23,7 +23,12 @@ const IngredientBtn: React.FC<Props> = ({ imgSrc, onClick, active, disabled }): 
     )
 }
 
-const Button = styled("button")<any>`
+interface ButtonProps {
+    disabled?: boolean
+    active?: boolean
+}
+
+const Button = styled("button")<ButtonProps>`
     border: 2rem;
     background-color: ${({ disabled }) => (disabled ? "#bdc3c7" : "#ecf0f1")};
     border-radius: 1rem;

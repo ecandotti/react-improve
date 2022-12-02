@@ -63,7 +63,7 @@ const Custom: React.FC = (): JSX.Element => {
             <Flex direction="column">
                 <IngredientList style={{ textAlign: "center" }}>
                     <PizzAnimation />
-                    <Flex>
+                    <Flex direction="row">
                         <IngredientBtn
                             imgSrc={cheese}
                             onClick={() => setPizza({ ...pizza, cheese: !pizza?.cheese })}
@@ -102,7 +102,7 @@ const Custom: React.FC = (): JSX.Element => {
                         />
                     </Flex>
                 </IngredientList>
-                <Flex>
+                <Flex direction="row">
                     <Button
                         text="Annuler"
                         onClick={(e: Event) => cancelPizza(e)}
@@ -132,7 +132,7 @@ const Custom: React.FC = (): JSX.Element => {
     )
 }
 
-const Flex = styled("div")<any>`
+const Flex = styled("div")<{ direction: "column" | "row" }>`
     display: flex;
     flex-direction: ${({ direction }) => direction};
     justify-content: center;
