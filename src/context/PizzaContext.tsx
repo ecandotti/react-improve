@@ -11,17 +11,13 @@ interface Props {
 const PizzaContext = createContext<IPizzaContext>({
     pizza: {},
     setPizza: () => {},
-    addContent: () => {},
-    removeContent: () => {},
     clearContent: () => {},
 })
 
 export const PizzaContextProvider: React.FC<Props> = ({ children }) => {
-    const [pizza, setPizza] = useState({})
-
-    const addContent = (item: any) => {
-        setPizza({ ...pizza, item })
-    }
+    const [pizza, setPizza] = useState<IPizza>({
+        done: false,
+    })
 
     const removeContent = (item: any) => {}
 
@@ -36,8 +32,6 @@ export const PizzaContextProvider: React.FC<Props> = ({ children }) => {
     const context: IPizzaContext = {
         pizza,
         setPizza,
-        addContent,
-        removeContent,
         clearContent,
     }
 

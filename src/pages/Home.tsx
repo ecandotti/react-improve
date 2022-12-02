@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { useNavigate } from "react-router-dom"
 
-import { Button } from "src/components"
+import { Button, RandomPhoto } from "src/components"
 
 const Home: React.FC = (): JSX.Element => {
     const navigate = useNavigate()
@@ -9,6 +9,7 @@ const Home: React.FC = (): JSX.Element => {
     return (
         <Flex>
             <Button text="Commencer ma pizza" onClick={() => navigate("/custom")} />
+            <RandomPhoto />
         </Flex>
     )
 }

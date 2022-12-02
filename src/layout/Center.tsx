@@ -9,13 +9,14 @@ const Center: React.FC<Props> = ({ children }): JSX.Element => {
 }
 
 const FullScreen = styled("div")`
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #f5f6fa;
 `
 
 export default Center

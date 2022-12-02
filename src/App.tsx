@@ -1,6 +1,8 @@
 import { useOutlet } from "react-router-dom"
 import { CSSTransition, SwitchTransition } from "react-transition-group"
 
+import Center from "./layout/Center"
+
 import { routes } from "./configs/routes"
 
 import "src/assets/styles/index.css"
@@ -10,7 +12,7 @@ const App: React.FC = () => {
     const { nodeRef } = routes.find(route => route.path === location.pathname) ?? {}
 
     return (
-        <>
+        <Center>
             <SwitchTransition>
                 <CSSTransition
                     key={location.pathname}
@@ -26,7 +28,7 @@ const App: React.FC = () => {
                     )}
                 </CSSTransition>
             </SwitchTransition>
-        </>
+        </Center>
     )
 }
 

@@ -1,0 +1,14 @@
+.stripe__form {
+    position: relative;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.custom-cardd {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}

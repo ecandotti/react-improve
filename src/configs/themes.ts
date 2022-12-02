@@ -1,14 +1,18 @@
 const lightMode = {
     colors: {
-        white: "#FFFFFF",
+        white: "#f4f4f4",
         black: "#191919",
+        blue: "#3498db",
+        ketchup: "#aa0018",
     },
 }
 
 const darkMode = {
     colors: {
-        white: "#FFFFFF",
+        white: "#f4f4f4",
         black: "#191919",
+        blue: "#3498db",
+        ketchup: "#aa0018",
     },
 }
 

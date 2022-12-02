@@ -1,7 +1,5 @@
 export interface IPizzaContext {
-    pizza: {}
+    pizza: IPizza
     setPizza: React.Dispatch<React.SetStateAction<{}>>
-    addContent: (item: any) => void
-    removeContent: (item: any) => void
     clearContent: () => void
 }
