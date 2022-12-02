@@ -19,3 +19,12 @@
     transform: scale(0.9);
     transition: opacity 300ms, transform 300ms;
 }
+
+.slideRight-leave {
+    opacity: 1;
+}
+
+.slideRight-leave.slideRight-leave-active {
+    right: -1000%;
+    transition: 2s;
+}

@@ -1,7 +1,13 @@
 .relative {
     position: relative;
+    transition: 3s;
+    left: 0%;
 }
 
 .mb-4 {
     margin-bottom: 6rem;
+}
+
+.left-100 {
+    left: 1000%;
 }

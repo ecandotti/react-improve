@@ -36,6 +36,8 @@ const Button = styled("button")<ButtonProps>`
     height: 70px;
     padding: 1rem;
     cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
+    opacity: ${({ disabled }) => (disabled ? 0.4 : 1)};
+    transition: 0.3s;
     border: 4px solid ${({ active }) => (active ? "#3498db" : "#bdc3c7")};
 `
 

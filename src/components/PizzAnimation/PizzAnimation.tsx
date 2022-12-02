@@ -21,7 +21,7 @@ const PizzAnimation: React.FC = (): JSX.Element => {
     const { pizza } = useContext(PizzaContext)
 
     return (
-        <div className="relative mb-4">
+        <div className={`relative mb-4 ${pizza.done && "left-100"}`}>
             <img src={basePizza} width="350px" height="350px" />
             {pizza.sauce && <Sauce sauce={pizza.sauce} />}
             {pizza.done && <Cover />}

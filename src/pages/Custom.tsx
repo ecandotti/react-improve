@@ -103,16 +103,26 @@ const Custom: React.FC = (): JSX.Element => {
                     </Flex>
                 </IngredientList>
                 <Flex direction="row">
-                    <Button
-                        text="Annuler"
-                        onClick={(e: Event) => cancelPizza(e)}
-                        styleBtn="outline"
-                    />
-                    <Button
-                        text="Recevoir ma pizza"
-                        onClick={(e: Event) => handleSubmit(e)}
-                        isLoading={isLoading}
-                    />
+                    {!pizza.done ? (
+                        <>
+                            <Button
+                                text="Annuler"
+                                onClick={(e: Event) => cancelPizza(e)}
+                                styleBtn="outline"
+                            />
+                            <Button
+                                text="Recevoir ma pizza"
+                                onClick={(e: Event) => handleSubmit(e)}
+                                isLoading={isLoading}
+                            />
+                        </>
+                    ) : (
+                        <Button
+                            text="Recommencer"
+                            onClick={(e: Event) => cancelPizza(e)}
+                            isLoading={isLoading}
+                        />
+                    )}
                 </Flex>
             </Flex>
             <Modal
